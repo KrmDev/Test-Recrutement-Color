@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  min-height: 67.3vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #264a6e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+  font-size: 0.9em;
+}
+header hr {
+  width: 5.5em;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+header span {
+  display: flex;
+  align-items: center;
+}
+
+.bouton {
+  color: white;
+  background: #f74a53;
+  border-radius: 4px;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  text-align: center;
+}
+.bouton:hover {
+  cursor: pointer;
+}
+.bouton:active {
+  background: rgba(221, 47, 47, 0.8588235294);
+}
+
+nav {
+  background: #e5e7eb;
+  width: 250px;
+  height: 968px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .ligne-logo {
+  transform: scale(1.4, 1.4);
+}
+nav .ligne-1 {
+  padding-top: 1.3em;
+}
+nav .ligne-1 .logo {
+  transform: scale(1.3, 1.3);
+}
+nav .ligne-3 {
+  padding-bottom: 5em;
+}
+nav ul {
+  margin-bottom: 20em;
+}
+nav li {
+  list-style: none;
+  margin: 50px 0px;
+}
+nav a {
+  text-decoration: none;
+  color: #264a6e;
+  padding: 10px 20px;
+  font-size: 0.8em;
+}
+
+main {
+  margin: 5em 15em 0em 15em;
+  display: flex;
+  flex-direction: column;
+}
+main .main-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+main .main-title select {
+  padding: 0.3em 1em;
+  border-radius: 3px;
+}
+main .joursDouvertureEtHoraires {
+  box-shadow: -1px 1px 27px -2px rgba(230, 224, 224, 0.64);
+  -webkit-box-shadow: -1px 1px 27px -2px rgba(230, 224, 224, 0.64);
+  -moz-box-shadow: -1px 1px 27px -2px rgba(230, 224, 224, 0.64);
+  height: 200px;
+}
+main .main-foot {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+main .main-foot a {
+  color: #264a6e;
+  text-decoration: none;
+}
+main .main-foot div {
+  color: white;
+  background: #f74a53;
+  border-radius: 5px;
+  padding: 0.5em 2em 0.5em 2em;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3em 10em 3em 10em;
+  font-size: 0.9em;
+  box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
+  -webkit-box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
+  -moz-box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
+}
+footer .c1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+footer .c1 input {
+  width: 50em;
+  margin-top: 1em;
+}
+footer .c1 div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  padding-right: 30em;
+}
+
+/*# sourceMappingURL=default.css.map */
