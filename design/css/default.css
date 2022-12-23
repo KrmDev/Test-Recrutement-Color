@@ -1,13 +1,172 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-* {
+footer input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+footer input[type=range]:focus {
+  outline: none;
+}
+footer input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #264a6e;
+  border-radius: 5px;
+}
+footer input[type=range]::-webkit-slider-thumb {
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #264a6e;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8px;
+}
+footer input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #264a6e;
+}
+footer input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #264a6e;
+  border-radius: 1px;
+}
+footer input[type=range]::-moz-range-thumb {
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+footer input[type=range]::-ms-track {
+  width: 100%;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+footer input[type=range]::-ms-fill-lower {
+  background: #264a6e;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000;
+}
+footer input[type=range]::-ms-fill-upper {
+  background: #264a6e;
+  border-radius: 2px;
+}
+footer input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  height: 26px;
+  width: 26px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+footer input[type=range]:focus::-ms-fill-lower {
+  background: #264a6e;
+}
+footer input[type=range]:focus::-ms-fill-upper {
+  background: #264a6e;
+}
+
+.h {
+  display: flex;
+  flex-direction: column;
+}
+.h .middle {
+  position: relative;
+  width: 100%;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+.h .slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+.h .slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #cac4c4;
+}
+.h .slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #264a6e;
+}
+.h .slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  background-color: #264a6e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(0, 202, 238, 0.17);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.h .slider > .thumb.left {
+  left: 25%;
+  transform: translate(-15px, -10px);
+}
+.h .slider > .thumb.right {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+.h .slider > .thumb.hover {
+  box-shadow: 0 0 0 20px rgba(0, 202, 238, 0.17);
+}
+.h .slider > .thumb.active {
+  box-shadow: 0 0 0 40px rgba(0, 202, 238, 0.17);
+}
+.h input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.h input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-  min-height: 67.3vh;
+  min-height: 64.5vh;
   display: flex;
   flex-direction: column;
 }
@@ -172,7 +331,7 @@ main .main-foot div {
 footer {
   display: flex;
   justify-content: center;
-  padding: 3em 10em 3em 10em;
+  padding: 3em 15em 3em 10em;
   font-size: 0.9em;
   box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
   -webkit-box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
@@ -182,7 +341,6 @@ footer .c1 {
   width: 80%;
   display: flex;
   flex-direction: column;
-  font-weight: bold;
 }
 footer .c1 input {
   width: 50em;
@@ -192,7 +350,13 @@ footer .c1 div {
   display: flex;
   justify-content: space-between;
   margin-top: 0.5em;
-  padding-right: 30em;
+  padding-right: 33em;
+  font-size: 0.8em;
+}
+footer .c2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5em;
 }
 
 /*# sourceMappingURL=default.css.map */

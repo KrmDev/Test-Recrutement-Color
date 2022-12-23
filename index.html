@@ -202,6 +202,19 @@
 
                 <div class="h">
                     <span>Horaires</span>
+                    <div class="middle">
+                        <div class="multi-range-slider">
+                            <input type="range" id="input-left" min="0" max="100" value="25">
+                            <input type="range" id="input-right" min="0" max="100" value="75">
+                    
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -215,9 +228,10 @@
 
 
         <footer>
-            <div class="c1"><span> Essai gratuit &nbsp;&nbsp;&nbsp;&nbsp;
-                    30 minutes d'appel restantes dans votre période d'essai</span>
-                <input type="range">
+            <div class="c1">
+                <span><b> Essai gratuit &nbsp;&nbsp;&nbsp;&nbsp;
+                    30 minutes d'appel restantes dans votre période d'essai</b></span>
+                <input class="slide-bar" id="myRange" type="range" min="0" max="100" value="0">
                 <div><span>30 min</span><span>0 min</span></div>
             </div>
             <div class="c2">
@@ -225,6 +239,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
