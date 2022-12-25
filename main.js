@@ -61,3 +61,27 @@ inputRight.addEventListener("mousedown", function() {
 inputRight.addEventListener("mouseup", function() {
 	thumbRight.classList.remove("active");
 });
+
+// -------------------------------------------------------------------------------------------------------------------
+
+// Burger Menu : 
+
+const HAMBURGER = document.querySelector(".hamburger");
+const navBar = document.querySelector(".navbar");
+headerLogo = document.querySelector(".logo-header");
+let time = document.querySelector(".time");
+
+let navBarDisplayed = false;
+
+HAMBURGER.addEventListener("click", () => {
+  navBarDisplayed = !navBarDisplayed;
+  if (navBarDisplayed) {
+    navBar.style.display = "flex";
+	headerLogo.style.display = "none";
+  } else {
+    navBar.style.display = "none";
+	headerLogo.style.display = "block";
+  }
+});
+
+

@@ -1,4 +1,4 @@
-@import "variables";
+@import "slide-bar";
 
 @mixin googleFonts ($nomDeLaPolice) {
     @import url('https://fonts.googleapis.com/css2?family=' + $nomDeLaPolice + '&display=swap');
@@ -49,16 +49,17 @@
 @include googleFonts("Poppins");
 
 
-* {
+*,
+*:before,
+*:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: "Poppins",sans-serif;
 }
 
-	
 .container {
-    min-height: 67.3vh;
+    min-height: 64.5vh;
 	display:flex;
 	flex-direction:column;
 }
@@ -72,6 +73,25 @@ header {
     justify-content: space-evenly;
     padding: 1em;
     font-size: 0.9em;
+
+    .logo-header {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        .burger-bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+    }
 
     hr {
         width: 5.5em;
@@ -89,11 +109,13 @@ header {
     @include bouton;
 }
 
-nav {
+
+.navbar {
     background: #e5e7eb;
     width: 250px; 
     height: 968px;
     float: left;
+    // display: none;
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -113,9 +135,12 @@ nav {
         padding-bottom: 5em;
     }
 
-    ul {
+    .ligne-2 {
         margin-bottom: 20em;
+        transition: 0.3s;
     }
+
+    
 
     li {
         list-style: none;
@@ -221,7 +246,7 @@ main {
 footer {
     display: flex;
     justify-content: center;
-    padding: 3em 10em 3em 10em;
+    padding: 3em 15em 3em 10em;
     font-size: 0.9em;
     box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
     -webkit-box-shadow: 0px -15px 13px -1px rgba(230, 224, 224, 0.64);
@@ -231,7 +256,6 @@ footer {
         width: 80%;
         display: flex;
         flex-direction: column;
-        font-weight: bold;
 
         input {
             width: 50em;
@@ -242,18 +266,24 @@ footer {
             display: flex;
             justify-content: space-between;
             margin-top: 0.5em;
-            padding-right: 30em;
+            padding-right: 36%;
+            font-size: 0.8em;
         }
 
     }
 
     .c2 {
-
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.5em;
+        .bouton {
+            padding: 0.8em 1.5em 0.8em 1.5em;
+        }
     }
 
-    
 }
 
+@import "media";
 
 
 

@@ -1,0 +1,169 @@
+@media (max-width: 1800px) {
+    .c1 {
+        .time {
+            padding-right: 28%;
+        }
+    }
+}
+
+@media (max-width: 1720px) {
+    .c1 {
+        .time {
+            padding-right: 26%;
+        }
+    }
+
+    nav {
+        width: 220px; 
+        .ligne-1 {
+        .logo {
+            transform: scale(1.2, 1.2);
+        }
+        }
+    }
+
+    main {
+         margin: 5em 8em 0em 8em;
+    }
+
+
+}
+
+@media (max-width: 1650px) {
+    .c1 {
+        .time {
+            padding-right: 20%;
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .c1 {
+        .time {
+            padding-right: 17%;
+        }
+    }
+}
+
+@media (max-width: 1555px) {
+    footer {
+        padding: 3em 8em 3em 8em;  
+    .c1 {
+        .time {
+            padding-right: 23%;
+        }
+    }
+}
+}
+
+@media (max-width: 1500px) {
+
+    main {
+        margin: 5em 6em 0em 6em;
+   }
+
+    footer {
+        padding: 3em 6em 3em 6em;  
+    .c1 {
+        .time {
+            padding-right: 24%;
+        }
+    }
+}
+}
+
+@media (max-width: 1420px) {
+
+    main {
+        margin: 5em 4em 0em 4em;
+   }
+
+    footer {
+        padding: 3em 4em 3em 4em;  
+    .c1 {
+        .time {
+            padding-right: 23%;
+        }
+    }
+}
+}
+
+@media (max-width: 1350px) {
+
+    main {
+        margin: 5em 3em 0em 3em;
+   }
+
+    footer {
+        padding: 3em 3em 3em 3em;  
+    .c1 {
+        .time {
+            padding-right: 20%;
+        }
+    }
+}
+}
+
+@media (max-width: 1250px) {
+
+    main {
+        margin: 5em 2em 0em 2em;
+   }
+
+    footer {
+        padding: 3em 2em 3em 2em;  
+    .c1 {
+        .time {
+            padding-right: 14%;
+        }
+    }
+}
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+    }
+    header {
+
+        .logo-header {
+            display: block;
+        }
+        .hamburger {
+            display: block;
+        }
+
+        .hamburger
+        &:active {
+            .bar:nth-child(2) {
+                opacity: 0;
+            }
+        }
+        .hamburger
+        &:active {
+            .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        } 
+        .hamburger
+        &:active {
+            .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        } 
+    }
+
+    footer {
+        padding: 3em 2em 3em 2em;  
+    .c1 {
+        .time {
+            padding-right: 27%;
+        }
+    }
+}
+}
+
+
+
+
+
